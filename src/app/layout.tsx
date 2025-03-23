@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 // Add Bootstrap Icons CSS
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -60,6 +61,7 @@ export default function RootLayout({
         <footer className="p-4 mt-8 bg-gray-800/50 text-gray-400 text-center border-t border-gray-700">
           <p>Element Catalogue &copy; {new Date().getFullYear()}</p>
         </footer>
+        <Analytics/>
       </body>
     </html>
   );
